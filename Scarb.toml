@@ -10,4 +10,5 @@ edition = "2023_10"
 starknet = ">=2.3.0"
 zklink_starknet_utils = { git = "https://github.com/zkLinkProtocol/zklink-starknet-utils.git" }
 
+
 [[target.starknet-contract]]
