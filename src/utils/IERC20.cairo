@@ -12,6 +12,10 @@ trait IERC20<TContractState> {
 
     fn balance_of(self: @TContractState, account: ContractAddress) -> u256;
 
+    fn mint(self: @TContractState, to: ContractAddress, amount: u256);
+
+    fn burn(self: @TContractState, to: ContractAddress, amount: u256)-> bool;
+
     fn allowance(self: @TContractState, owner: ContractAddress, spender: ContractAddress) -> u256;
 
     fn transfer(ref self: TContractState, recipient: ContractAddress, amount: u256) -> bool;
