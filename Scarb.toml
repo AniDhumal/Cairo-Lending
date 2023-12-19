@@ -1,0 +1,13 @@
+[package]
+name = "lending"
+version = "0.1.0"
+edition = "2023_10"
+
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[dependencies]
+starknet = ">=2.3.0"
+zklink_starknet_utils = { git = "https://github.com/zkLinkProtocol/zklink-starknet-utils.git" }
+
+[[target.starknet-contract]]
