@@ -14,7 +14,7 @@ trait IERC20<TContractState> {
 
     fn mint(self: @TContractState, to: ContractAddress, amount: u256);
 
-    fn burn(self: @TContractState, to: ContractAddress, amount: u256)-> bool;
+    fn burn(self: @TContractState, to: ContractAddress, amount: u256) -> bool;
 
     fn allowance(self: @TContractState, owner: ContractAddress, spender: ContractAddress) -> u256;
 
